@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;300;500;700&display=swap');
+
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sora', sans-serif;
+}
+
+body {
+    background-color: #f6f6f6;
+}
+
+nav {
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 0 80px;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    transition: .3s;
+}
+
+nav ul a:hover {
+    opacity: .7;
+}
+
+header {
+    height: calc(100vh - 80px);
+    width: 100%;
+    margin-top: 80px;
+    display: flex;
+    align-items: flex-end;
+    padding: 100px 80px;
+    background-image: url(../img/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+header h1 {
+    font-size: 40px;
+    color: #fff;
+}
+
+header button {
+    outline: none;
+    background: none;
+    border: 1px solid #fff;
+    color: #fff;
+    margin: 20px 0;
+    padding: 12px 22px;
+    font-size: 20px;
+    transition: .4s;
+    cursor: pointer;
+}
+
+header button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+section.container {
+    height: 100px;
+    width: 1300px;
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.item {
+    height: 260px;
+    width: 360px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.item img {
+    height: 200px;
+    width: 360px;
+    object-fit: cover;
+    filter: grayscale(100%);
+    transition: .3s;
+}
+
+.item p {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.item:hover img {
+    filter: grayscale(0);
+}
